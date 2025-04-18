@@ -1,0 +1,249 @@
+/* Thiết lập font chữ và màu nền chung */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.logo {
+    width: 700px; 
+    display: block;
+    margin: 0 auto 10px; 
+}
+/* Cấu trúc header với hình ảnh hai bên */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+    background-color: #ffffff;
+}
+
+/* Ảnh hai bên header */
+.header-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Căn giữa nội dung header */
+.header-content {
+    text-align: center;
+    flex: 1; /* Giúp phần nội dung nằm giữa */
+}
+
+/* Chỉnh kích thước logo */
+.logo {
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    color: #b39858;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Màn hình chọn vai trò */
+#role-selection {
+    margin-top: 50px;
+}
+
+.role-button {
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #000000;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.role-button:hover {
+    background-color: #571846;
+}
+/* chatbox */
+
+
+
+
+/* Giao diện chung cho cả giảng viên và sinh viên */
+.interface {
+    margin-top: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Giao diện giảng viên */
+#teacher-interface {
+    text-align: left;
+}
+
+#teacher-interface select, #teacher-interface input {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+#teacher-interface button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#teacher-interface button:hover {
+    background-color: #45a049;
+}
+
+/* Giao diện người học */
+#student-interface {
+    text-align: left;
+
+}
+
+#student-interface input {
+    padding: 10px;
+    width: 70%;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#student-interface button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#student-interface button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #b39858;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+#question-input, #student-question-input {
+    display: block !important;
+}
+/* Căn giữa thanh nhập */
+#question-input, #student-question-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Chỉnh kích thước input */
+#question, #student-question {
+    width: 60%;  /* Điều chỉnh độ dài, có thể thay bằng 70%, 80% nếu muốn */
+    max-width: 1000px; /* Giới hạn độ dài tối đa */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Chỉnh nút gửi */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Căn giữa giao diện chung */
+.interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+    text-align: center;
+}
+
+/* Chỉnh form nhập câu hỏi */
+#question-input, #student-question-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Chỉnh kích thước input */
+#question, #student-question {
+    width: 60%;  /* Độ rộng 60% màn hình */
+    max-width: 600px; /* Giới hạn tối đa */
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    text-align: left;
+    outline: none;
+}
+
+/* Chỉnh nút gửi */
+button {
+    margin-top: 15px;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+

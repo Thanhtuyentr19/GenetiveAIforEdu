@@ -1,0 +1,137 @@
+git<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI for Education</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        .chatbox-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .webchat {
+            height: 600px;
+            width: 400px;
+        }
+        iframe {
+            height: 100%;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="style/pic1.jpg" alt="Ảnh trái" class="header-img left">
+            <div class="header-content">
+                <img src="style/logo.png" alt="Logo" class="logo">
+                <h1>Chào mừng đến với Generative AI</h1>
+                <p>Vui lòng chọn vai trò của bạn để tiếp tục</p>
+            </div>
+            <img src="style/pic2.jpeg" alt="Ảnh phải" class="header-img right">
+        </div>
+    </header>
+    
+    <main>
+        <section id="role-selection">
+            <button class="role-button" onclick="showTeacherInterface()">Giảng viên</button>
+            <button class="role-button" onclick="showStudentInterface()">Người học</button>
+        </section>
+    </main>
+
+    <div class="chatbox-container" style="display: none">
+    <div class="webchat">
+        <iframe src="https://files.bpcontent.cloud/2025/03/26/18/20250326182158-MG7VJOEP.js"""></iframe>
+        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    </body>
+    </div>
+</div>
+    
+    <div id="webchat-container" style="position: relative; width: 100%; height: 100%;">
+        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+
+        <script>
+          
+
+// window.botpress.on("webchat:ready", () => {
+//     window.botpress.open();
+// });
+
+          window.botpress.init({
+            "botId": "01c16a1c-0720-4248-ae57-0a858fccd0f9",
+            "configuration": {
+              "botName": "Lydinc",
+            //   "botAvatar": "https://lh4.googleusercontent.com/ZP2ZLzIJCj08K4v8kDw7-8I2nq9Ya3FpvPGztDnhC-t7HwTSrtfwAcBowIgfst2qVw5UWYscbOoQ2nLtiVjILQY=w16383",
+              "botDescription": "Chào mừng bạn đến với trợ lý giảng dạy STEAM của LYDINC! Tôi là hệ thống tư vấn thông minh, hỗ trợ giảng viên và tổ chức giáo dục trong việc thiết kế và phát triển chương trình giảng dạy STEAM. Hãy cho tôi biết nhu cầu của bạn, tôi sẽ giúp bạn tối ưu hóa quá trình giảng dạy một cách hiệu quả và phù hợp nhất.",
+              "website": {
+             "title": "https://www.lydinc.net/",
+            "link": "https://www.lydinc.net/"
+            },
+            "email": {
+            "title": "contact@lydinc.net",
+            "link": "contact@lydinc.net"
+            },
+            "phone": {
+            "title": " 089 900 11 68",
+            "link": " 089 900 11 68"
+            },
+            "termsOfService": {
+            "title": "https://www.lydinc.net/knowledge-for-sharing/quality-assurance-for-higher-education/aun-qa-level-2/aun-qa-program-qa-resources/6-student-support-services",
+            "link": "https://www.lydinc.net/knowledge-for-sharing/quality-assurance-for-higher-education/aun-qa-level-2/aun-qa-program-qa-resources/6-student-support-services"
+            },
+              "privacyPolicy": {},
+              "color": "#b39858",
+              "variant": "solid",
+              "themeMode": "light",
+              "fontFamily": "inter",
+              "radius": 1,
+              "additionalStylesheetUrl": "https://files.bpcontent.cloud/2025/03/26/18/20250326182539-C60JPFEC.css",
+              
+              StyleSheet: {
+                "width": "100%",
+                "height": "100%",
+                "position": "absolute",
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "bottom": 0
+              },
+              "allowFileUpload": true
+
+            },
+            "clientId": "5402dc04-7a8d-4e2d-ba33-490256fa102f"
+          });
+        </script>
+        <style>
+          #webchat-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+          }
+          .bpFab {
+            display: none;
+          }
+          .bpWebchat {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+          }
+        </style>
+      </div>
+    </div>
+    
+    <footer>
+        <p>© 2024 Generative AI for Education Project</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</html>
